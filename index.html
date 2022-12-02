@@ -4,10 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Year Countdown</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- js -->
+    <script src="script.js" defer></script>
+    <title id="year"></title>
 </head>
 <body>
-    <h1>New Year Countdown</h1>
-    <h1>New Year Countdown</h1>
+    <!-- Audio -->
+    <audio id="audio">
+        <source src="assets/family-christmas-orchestral-cinematic-magical-fairy-tale-125109.mp3" type="audio/wav">
+    </audio>
+    <div class="audio-controllers">
+        <div onclick="play();" class="play-container">
+            <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_brecptzv.json"               background="transparent" speed="1"
+                style="width: 50px; height: 50px;" loop autoplay ></lottie-player>
+        </div>
+        <div onclick="pause();" class="play-container">
+            <lottie-player src="https://lottie.host/04e0881b-e296-4430-8225-102ac0c57eae/spZSnAxc9M.json" background="transparent"
+                speed=".4" style="width: 40px; height: 40px;" loop autoplay></lottie-player>
+        </div>
+    </div>
+    <!-- Header -->
+    <div class="header-container">
+        <div class="header-container-text">
+            <h0 ><b id="currentYear"></b></h0>
+            <h1 class="header-text">New Year Countdown</h1>
+
+        </div>
+        <lottie-player src="https://lottie.host/800899df-8b48-4bfa-938e-408bb3cb3a3a/cemZIUwiDs.json" mode="bounce" background="transparent"
+            speed=".7" style="width: 375px; height: 300px;" loop autoplay></lottie-player>
+    </div>
+<!-- Body Countdown -->
+    <div id="countdown" class="countdown-container">
+        <!-- Days and hours -->
+        <div class="countdown-block">
+                <div class="time">
+                    <h1 id="days">00</h1>
+                    <small class="mini d-block">Days</small>
+                </div>
+                <div class="time">
+                    <h1 id="hours">00</h1>
+                    <small class="mini d-block">Hours</small>
+                </div>
+        </div>
+        <!-- Minutes and seconds -->
+        <div class="countdown-block">
+                <div class="time">
+                    <h1 id="minutes">00</h1>
+                    <small class="mini d-block">Minutes</small>
+                </div>
+                <div class="time">
+                    <h1 id="seconds">00</h1>
+                    <small class="mini d-block">Seconds</small>
+                </div>
+        </div>
+    </div>
+    <!-- Footer name -->
+    <div class="heart-name">
+        <h6>Made by Svitlana </h6>
+        <a href="https://instagram.com/web_svyuko" target="_blank">
+            <lottie-player class="decorations" src="https://assets2.lottiefiles.com/packages/lf20_scscv3eu.json" background="transparent" speed="1" style="width: 50px; height: 50px; margin: 0 10px" loop autoplay></lottie-player>
+        </a>
+    </div>
+    
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
 </body>
 </html>
